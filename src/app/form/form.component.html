@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Libro</title>
+</head>
+<body>
+
+  <h2>Formulario de Libro</h2>
+
+  <form [formGroup]="userForm" (submit)="onSubmit()">
+    <div>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" formControlName="nombre" required>
+    </div>
+
+    <div>
+      <label for="autor">Autor:</label>
+      <input type="text" id="autor" formControlName="autor" required>
+    </div>
+
+    <button type="submit">Guardar</button>
+  </form>
+
+
+
+</body>
+</html>
+

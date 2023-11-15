@@ -1,0 +1,13 @@
+<div *ngFor="let biblioteca of bibliotecas">
+  <h2>{{ biblioteca.nombre }}</h2>
+  <p>Dirección: {{ biblioteca.direccion }}</p>
+  <p>Ciudad: {{ biblioteca.ciudad }}</p>
+
+  <div *ngIf="biblioteca.catalogo.length > 0">
+    <h3>Catalogo:</h3>
+    <ul>
+      <li *ngFor="let libro of biblioteca.catalogo">{{ libro.nombre }}</li>
+    </ul>
+  </div>
+  <hr />
+</div>
